@@ -25,7 +25,7 @@ If the client supports remote MCP, connect once and skip the manual fetching ent
 claude mcp add --transport http csscreme https://csscreme.com/mcp
 ```
 
-Free, no account, no API key. Ten tools:
+Free, no account, no API key. Thirteen tools:
 
 | Tool | Reach for it when |
 |---|---|
@@ -37,8 +37,11 @@ Free, no account, no API key. Ten tools:
 | `get_agent_rules` | Pulling the numbered constraints on their own |
 | `how_to_use` | Unsure which tool to reach for |
 | `decode_url` | The user names a live page to match |
+| `get_design_md_for_url` | You want a whole DESIGN.md for that page, not just its tokens |
 | `decode_site` | Decoding a whole site rather than one page |
 | `verify_design_md` | Checking generated UI against the file it was given |
+| `css_feature` | Deciding whether a modern CSS feature is safe to ship, from Baseline data and who ships it |
+| `get_scene_embed` | The page wants a living 3D nature scene in the brand's colours |
 
 Typical flow is `search_themes` to find a fit, `get_design_md` to read the contract, then
 `get_theme_tokens` when you are ready to write `globals.css`. When the user names a site to match,

@@ -24,11 +24,13 @@ checkable. "Make it clean" is not.
 claude mcp add --transport http csscreme https://csscreme.com/mcp
 ```
 
-That gives the agent ten tools with no files to manage: `search_themes`, `list_themes`,
+That gives the agent thirteen tools with no files to manage: `search_themes`, `list_themes`,
 `get_design_md`, `get_theme_tokens`, `get_install_command`, `get_agent_rules`, `how_to_use`,
-`decode_url`, `decode_site` and `verify_design_md`. The last three are the ones worth knowing
-about: point the agent at a live URL and it decodes that site into the same format, then checks
-its own generated UI against the file afterwards. The skill below adds the house rules on top.
+`decode_url`, `get_design_md_for_url`, `decode_site`, `verify_design_md`, `css_feature` and
+`get_scene_embed`. The URL tools are the ones worth knowing about: point the agent at a live URL
+and it decodes that site into the same format, then checks its own generated UI against the file
+afterwards. `css_feature` answers whether a modern CSS feature is safe to ship, from Baseline data
+and from what curated sites actually ship. The skill below adds the house rules on top.
 
 ### As a skill
 
